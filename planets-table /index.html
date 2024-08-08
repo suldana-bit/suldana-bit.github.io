@@ -6,6 +6,54 @@
     <meta name="author" content="Aynan Suldan">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>Planets Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        caption {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        colgroup col:first-child {
+            background-color: #e6e6e6;
+        }
+
+        colgroup col:nth-child(2) {
+            background-color: #f7f7f7;
+        }
+
+        tbody th[scope="rowgroup"] {
+            background-color: #e6e6e6;
+            text-align: center;
+        }
+
+        td img {
+            max-width: 50px;
+            height: auto;
+        }
+
+        a {
+            color: blue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,8 +79,6 @@
             </colgroup>
             <thead>
                 <tr>
-                    <th>Category</th>
-                    <th>Subcategory</th>
                     <th>Name</th>
                     <th>Mass (10<sup>24</sup>kg)</th>
                     <th>Diameter (km)</th>
@@ -49,7 +95,6 @@
             <tbody>
                 <tr>
                     <th rowspan="4" scope="rowgroup">Terrestrial planets</th>
-                    <td></td>
                     <td>Mercury</td>
                     <td>0.330</td>
                     <td>4,879</td>
@@ -63,7 +108,6 @@
                     <td><img src="images/mercury.jpg" alt="Image of Mercury"></td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Venus</td>
                     <td>4.87</td>
                     <td>12,104</td>
@@ -77,7 +121,6 @@
                     <td><img src="images/venus.jpg" alt="Image of Venus"></td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Earth</td>
                     <td>5.97</td>
                     <td>12,756</td>
@@ -91,7 +134,6 @@
                     <td><img src="images/earth.png" alt="Image of Earth"></td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Mars</td>
                     <td>0.642</td>
                     <td>6,792</td>
@@ -105,8 +147,7 @@
                     <td><img src="images/mars.jpg" alt="Image of Mars"></td>
                 </tr>
                 <tr>
-                    <th rowspan="8" scope="rowgroup">Jovian planets</th>
-                    <th rowspan="2" scope="rowgroup">Gas giants</th>
+                    <th rowspan="4" scope="rowgroup">Jovian planets</th>
                     <td>Jupiter</td>
                     <td>1898</td>
                     <td>142,984</td>
@@ -133,7 +174,6 @@
                     <td><img src="images/saturn.jpg" alt="Image of Saturn"></td>
                 </tr>
                 <tr>
-                    <th rowspan="2" scope="rowgroup">Ice giants</th>
                     <td>Uranus</td>
                     <td>86.8</td>
                     <td>51,118</td>
@@ -178,4 +218,5 @@
     </main>
 </body>
 </html>
+
 
