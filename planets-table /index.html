@@ -10,48 +10,27 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            font-family: Arial, sans-serif;
         }
-
-        caption {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
         th, td {
-            border: 1px solid #999;
+            border: 1px solid black;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
-
         th {
             background-color: #f2f2f2;
         }
-
-        colgroup col:first-child {
-            background-color: #e6e6e6;
+        caption {
+            caption-side: top;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
-
-        colgroup col:nth-child(2) {
-            background-color: #f7f7f7;
-        }
-
-        tbody th[scope="rowgroup"] {
-            background-color: #e6e6e6;
-            text-align: center;
-        }
-
-        td img {
-            max-width: 50px;
+        img {
+            width: 50px;
             height: auto;
         }
-
-        a {
-            color: blue;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        th[rowspan] {
+            background-color: #e6e6e6;
         }
     </style>
 </head>
@@ -62,23 +41,9 @@
     <main>
         <table>
             <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
-            <colgroup>
-                <col title="Category">
-                <col title="Subcategory">
-                <col title="Name">
-                <col title="Mass">
-                <col title="Diameter">
-                <col title="Density">
-                <col title="Gravity">
-                <col title="Length of day">
-                <col title="Distance from Sun">
-                <col title="Mean temperature">
-                <col title="Number of moons">
-                <col title="Notes">
-                <col title="Image">
-            </colgroup>
             <thead>
                 <tr>
+                    <th></th>
                     <th>Name</th>
                     <th>Mass (10<sup>24</sup>kg)</th>
                     <th>Diameter (km)</th>
@@ -94,7 +59,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <th rowspan="4" scope="rowgroup">Terrestrial planets</th>
+                    <th rowspan="4">Terrestrial planets</th>
                     <td>Mercury</td>
                     <td>0.330</td>
                     <td>4,879</td>
@@ -147,7 +112,8 @@
                     <td><img src="images/mars.jpg" alt="Image of Mars"></td>
                 </tr>
                 <tr>
-                    <th rowspan="4" scope="rowgroup">Jovian planets</th>
+                    <th rowspan="4">Jovian planets</th>
+                    <th rowspan="2">Gas giants</th>
                     <td>Jupiter</td>
                     <td>1898</td>
                     <td>142,984</td>
@@ -174,6 +140,7 @@
                     <td><img src="images/saturn.jpg" alt="Image of Saturn"></td>
                 </tr>
                 <tr>
+                    <th rowspan="2">Ice giants</th>
                     <td>Uranus</td>
                     <td>86.8</td>
                     <td>51,118</td>
@@ -200,7 +167,7 @@
                     <td><img src="images/neptune.jpg" alt="Image of Neptune"></td>
                 </tr>
                 <tr>
-                    <th colspan="2" scope="row">Dwarf planets</th>
+                    <th colspan="2">Dwarf planets</th>
                     <td>Pluto</td>
                     <td>0.0146</td>
                     <td>2,370</td>
@@ -218,5 +185,7 @@
     </main>
 </body>
 </html>
+
+
 
 
