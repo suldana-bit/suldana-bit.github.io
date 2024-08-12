@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Aynan Suldan">
     <title>Planets Data</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        body {
             font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
             font-size: 14px;
             text-align: left;
         }
@@ -22,7 +35,21 @@
 
         th {
             background-color: #f2f2f2;
-            font-weight: normal;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td:first-child {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td img {
+            width: 50px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         tr:nth-child(even) {
@@ -33,12 +60,12 @@
             background-color: #f1f1f1;
         }
 
-        td img {
-            width: 50px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+        .category {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            text-align: left;
         }
+
     </style>
 </head>
 <body>
@@ -48,7 +75,7 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Category</th>
+                <th>Category</th>
                 <th>Name</th>
                 <th>Mass (10^24kg)</th>
                 <th>Diameter (km)</th>
@@ -64,7 +91,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4">Terrestrial planets</td>
+                <td class="category" rowspan="4">Terrestrial planets</td>
                 <td>Mercury</td>
                 <td>0.330</td>
                 <td>4,879</td>
@@ -87,7 +114,7 @@
                 <td>108.2</td>
                 <td>464</td>
                 <td>0</td>
-                <td>Our world</td>
+                <td></td>
                 <td><img src="venus.jpg" alt="Venus"></td>
             </tr>
             <tr>
@@ -117,7 +144,7 @@
                 <td><img src="mars.jpg" alt="Mars"></td>
             </tr>
             <tr>
-                <td rowspan="4">Jovian planets</td>
+                <td class="category" rowspan="4">Jovian planets</td>
                 <td rowspan="2">Gas giants</td>
                 <td>Jupiter</td>
                 <td>1898</td>
@@ -172,7 +199,7 @@
                 <td><img src="neptune.jpg" alt="Neptune"></td>
             </tr>
             <tr>
-                <td>Dwarf planets</td>
+                <td class="category">Dwarf planets</td>
                 <td>Pluto</td>
                 <td>0.0146</td>
                 <td>2,370</td>
@@ -189,6 +216,7 @@
     </table>
 </body>
 </html>
+
 
 
 
