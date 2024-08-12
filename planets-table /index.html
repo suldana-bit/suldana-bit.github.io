@@ -11,15 +11,8 @@
         }
 
         h1 {
-            text-align: left;
             font-size: 2em;
             margin-bottom: 10px;
-        }
-
-        p {
-            text-align: left;
-            font-size: 1em;
-            margin-bottom: 20px;
         }
 
         table {
@@ -29,7 +22,7 @@
         }
 
         th, td {
-            border: 1px solid #dddddd;
+            border: 1px solid black;
             padding: 8px;
             text-align: center;
             vertical-align: middle;
@@ -78,20 +71,7 @@
     <p>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric</a>).</p>
 
     <table>
-        <colgroup>
-            <col span="2" title="">
-            <col title="Name">
-            <col title="Mass">
-            <col title="Diameter">
-            <col title="Density">
-            <col title="Gravity">
-            <col title="Length of day">
-            <col title="Distance from Sun">
-            <col title="Mean temperature">
-            <col title="Number of moons">
-            <col title="Notes">
-            <col title="Image">
-        </colgroup>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
         <thead>
             <tr>
                 <td colspan="2"></td>
@@ -110,6 +90,7 @@
         </thead>
         <tbody>
             <tr>
+                <th rowspan="4">Terrestrial planets</th>
                 <th rowspan="4">Terrestrial planets</th>
                 <td>Mercury</td>
                 <td>0.330</td>
@@ -217,7 +198,7 @@
                 <td><img src="images/neptune.jpg" alt="Neptune"></td>
             </tr>
             <tr>
-                <th>Dwarf planets</th>
+                <th colspan="2">Dwarf planets</th>
                 <td>Pluto</td>
                 <td>0.0146</td>
                 <td>2,370</td>
@@ -233,7 +214,7 @@
         </tbody>
     </table>
 </body>
-</
+</html>
 
 
 
