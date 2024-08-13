@@ -3,9 +3,140 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Aynan Suldan">
     <title>CTU Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .highlight {
+            color: #d9534f;
+        }
+
+        /* Navigation menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+
+        /* Main content */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        main h2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main-section {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .article-image {
+            width: 60%;
+            margin-right: 20px;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        aside {
+            width: 35%;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        .subsection {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .subsection figure {
+            width: 30%;
+        }
+
+        .subsection img {
+            width: 100%;
+            height: auto;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #d9534f;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,32 +158,29 @@
                 <figure class="article-image">
                     <img src="images/narwhal.jpg" alt="Chic Narwhal Waistcoat">
                 </figure>
-                <p>Sustainable seitan cornhole cardigan, deep v yr helvetica migas kogi venmo literally roof party pok pok. PBR&B swag echo park, trust fund wolf brunch la croix bicycle rights next level. Chillwave lomo woke enamel pin, tacos drinking vinegar pinterest lyft activated charcoal before they sold out. </p>
-                <p>Live-edge 90's echo park sartorial raclette, master cleanse neutra helvetica. Fingerstache four dollar toast subway tile, polaroid keffiyeh leggings shaman XOXO drinking vinegar unicorn art party paleo.</p>
+                <p>Yr master cleanse single-origin coffee heirloom pour-over hoodie, literally brunch echo park microdosing hella photo booth knausgaard four loko YOLO. PBR&B try-hard plaid jianbing subway tile polaroid cornhole fingerstache selvage four loko fanny pack shaman. Mustache tacos gastropub hoodie selfies.</p>
+                <p>Tumblr chia viral paleo. Coloring book trust fund glossier af. Craft beer whatever bushwick, meditation messenger bag yr pinterest chartreuse.</p>
                 
                 <h3>Synth Post-Ironic Hell</h3>
-                <p>Tote bag narwhal gastropub tbh gentrify. Man bun try-hard letterpress, poke austin thundercats succulents next level biodiesel palo santo aesthetic celiac hammock umami mlkshk. Snackwave mumblecore YOLO everyday carry subway tile cold-pressed kombucha keytar ennui organic mixtape selvage. </p>
-                <p>Artisan ennui next level put a bird on it, echo park chartreuse glossier humblebrag before they sold out subway tile quinoa blog PBR&B everyday carry deep v cronut snackwave.</p>
+                <p>Sriracha occupy art party butcher, synth fashion axe health goth gentrifying juicero chambray bicycle rights. Snackwave vaporware celiac fanny pack. </p>
                 
                 <h3>Unicorn Bread</h3>
-                <p>Seitan tofu pickled ramps synth butcher bicycle rights mlkshk thundercats gentrify ethical. Kombucha deep v food truck, vinyl godard gluten-free venmo semiotics biodiesel. Chambray polaroid cardigan tilde synth, raw denim fashion axe neutra.</p>
-                <p>Succulents cornhole narwhal everyday carry pinterest vaporware leggings chambray tote bag unicorn 3 wolf moon semiotics pickled roof party distillery.</p>
-                <p>Bicycle rights yr actually sartorial, XOXO fashion axe wolf lo-fi tofu skateboard.</p>
+                <p>Seitan poutine flexitarian small batch wolf. Direct trade selfies meh hoodie.</p>
                 
                 <time datetime="2024-08-11">August 11, 2024</time>
                 
                 <section class="subsection">
                     <figure>
                         <img src="images/image1.jpg" alt="Image 1">
-                        <figcaption>Sartorial scenester roof party.</figcaption>
+                        <figcaption>Twee, green banh mi la croix.</figcaption>
                     </figure>
                     <figure>
                         <img src="images/image2.jpg" alt="Image 2">
-                        <figcaption>Seitan succulents, woke wolf migas.</figcaption>
+                        <figcaption>Sartorial scenester roof party.</figcaption>
                     </figure>
                     <figure>
                         <img src="images/image3.jpg" alt="Image 3">
-                        <figcaption>Twee green banh mi la croix.</figcaption>
+                        <figcaption>Seitan succulents, woke wolf migas.</figcaption>
                     </figure>
                 </section>
                 
@@ -65,11 +193,11 @@
                 
                 <h3>Readymade Microdosing Trust Fund</h3>
                 <img src="images/readymade.jpg" alt="Readymade Microdosing Trust Fund">
-                <p>Meggings freegan, try-hard ennui street art tofu shabby chic. Deep v normcore enamel pin, pork belly sriracha bitters poke.</p>
+                <p>Meggings freegan, try-hard ennui street art tofu shabby chic.</p>
                 
                 <h3>Cliche Meditation</h3>
                 <img src="images/cliche.jpg" alt="Cliche Meditation">
-                <p>YOLO heirloom mixtape ramps tumeric. Gochujang tumeric tousled chia ramps slow-carb.</p>
+                <p>YOLO heirloom mixtape ramps tumeric.</p>
                 
                 <a href="#" class="expand">&#x26AB;&#x26AB;&#x26AB;</a>
             </aside>
@@ -77,8 +205,9 @@
     </main>
     
     <footer>
-        <p>&copy; 2024 Your Name. Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>&copy; 2024 Aynan Suldan. Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         <p>Images: "Stag", "Industrial", "Routine", "Eren 30's", "In Nomino", "Industrial City", and "Industrial City II" by Sasha Aim licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a>.</p>
     </footer>
 </body>
 </html>
+
