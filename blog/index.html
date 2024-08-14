@@ -1,213 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Aynan Suldan">
-    <title>CTU Blog</title>
+    <title>Tofu Charcoal Unicorns</title>
     <style>
-        /* General styles */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
+            background-color: #f4f4f4;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
-            background: #f4f4f4;
+            border-bottom: 5px solid #333;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: #333;
         }
 
-        .highlight {
-            color: #d9534f;
-        }
-
-        /* Navigation menu */
         nav {
             display: flex;
             justify-content: center;
-            background: #333;
+            background-color: #333;
         }
 
         nav a {
-            color: white;
             padding: 15px 20px;
             text-decoration: none;
+            color: #fff;
             text-transform: uppercase;
             font-weight: bold;
+            transition: background-color 0.3s;
         }
 
-        nav a:hover {
-            background: #555;
+        nav a:hover, .active {
+            background-color: #444;
         }
 
-        /* Main content */
+        .active {
+            border-bottom: 5px solid #fff;
+        }
+
         main {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        main h2 {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .main-section {
-            display: flex;
-            width: 100%;
+            margin: 20px auto;
             max-width: 1200px;
-            background: #f4f4f4;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 0 20px;
         }
 
-        .article-image {
-            width: 60%;
+        article {
+            flex: 3;
             margin-right: 20px;
         }
 
-        .article-image img {
-            width: 100%;
+        article img {
+            max-width: 100%;
             height: auto;
+            border: 5px solid #f4f4f4;
+        }
+
+        article h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        article h3 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 20px;
         }
 
         aside {
-            width: 35%;
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 2px solid #ccc;
         }
 
         aside h3 {
-            margin-top: 0;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
 
-        .subsection {
+        .expand {
+            text-align: center;
+            display: block;
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+
+        .subscribe-button {
+            display: block;
+            margin: 20px 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .image-bar {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
         }
 
-        .subsection figure {
-            width: 30%;
+        .image-bar figure {
+            flex: 1;
+            margin-right: 10px;
+            text-align: center;
         }
 
-        .subsection img {
+        .image-bar figure:last-child {
+            margin-right: 0;
+        }
+
+        .image-bar img {
             width: 100%;
             height: auto;
+            border: 5px solid #f4f4f4;
         }
 
-        button {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            background: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-            text-transform: uppercase;
+        .image-bar figcaption {
+            font-size: 0.9rem;
+            margin-top: 5px;
+            color: #333;
         }
 
-        button:hover {
-            background: #555;
-        }
-
-        /* Footer styles */
         footer {
-            background: #333;
-            color: white;
             text-align: center;
             padding: 20px;
+            background-color: #333;
+            color: #fff;
             margin-top: 20px;
         }
 
         footer a {
-            color: #d9534f;
+            color: #ffcc00;
             text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        footer p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Tofu <span class="highlight">Charcoal</span> Unicorns</h1>
-    </header>   
-
+        <h1>Tofu Charcoal Unicorns</h1>
+    </header>
+    
     <nav>
         <a href="#">About</a>
-        <a href="#">Blog</a>
+        <a href="#" class="active">Blog</a>
         <a href="#">Merch</a>
         <a href="#">History</a>
         <a href="#">Contact</a>
     </nav>
     
     <main>
-        <h2>Chic Narwhal Waistcoat</h2>
-        <section class="main-section">
-            <article>
-                <figure class="article-image">
-                    <img src="images/narwhal.jpg" alt="Chic Narwhal Waistcoat">
-                </figure>
-                <p>Yr master cleanse single-origin coffee heirloom pour-over hoodie, literally brunch echo park microdosing hella photo booth knausgaard four loko YOLO. PBR&B try-hard plaid jianbing subway tile polaroid cornhole fingerstache selvage four loko fanny pack shaman. Mustache tacos gastropub hoodie selfies.</p>
-                <p>Tumblr chia viral paleo. Coloring book trust fund glossier af. Craft beer whatever bushwick, meditation messenger bag yr pinterest chartreuse.</p>
-                
-                <h3>Synth Post-Ironic Hell</h3>
-                <p>Sriracha occupy art party butcher, synth fashion axe health goth gentrifying juicero chambray bicycle rights. Snackwave vaporware celiac fanny pack. </p>
-                
-                <h3>Unicorn Bread</h3>
-                <p>Seitan poutine flexitarian small batch wolf. Direct trade selfies meh hoodie.</p>
-                
-                <time datetime="2024-08-11">August 11, 2024</time>
-                
-                <section class="subsection">
-                    <figure>
-                        <img src="images/image1.jpg" alt="Image 1">
-                        <figcaption>Twee, green banh mi la croix.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/image2.jpg" alt="Image 2">
-                        <figcaption>Sartorial scenester roof party.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/image3.jpg" alt="Image 3">
-                        <figcaption>Seitan succulents, woke wolf migas.</figcaption>
-                    </figure>
-                </section>
-                
-                <button>Subscribe</button>
-            </article>
-            <aside>
-                <h3>Freegan Tote Bag</h3>
-                <img src="images/freegan.jpg" alt="Freegan Tote Bag">
-                <p>I’m baby retro single-origin coffee vex denim art banh mi. Twee hammock yr kinfolk slow-carb activated charcoal tote bag subway tile deep v normcore.</p>
-                
-                <h3>Readymade Microdosing Trust Fund</h3>
-                <img src="images/readymade.jpg" alt="Readymade Microdosing Trust Fund">
-                <p>Meggings freegan, try-hard ennui street art tofu shabby chic.</p>
-                
-                <h3>Cliche Meditation</h3>
-                <img src="images/cliche.jpg" alt="Cliche Meditation">
-                <p>YOLO heirloom mixtape ramps tumeric.</p>
-                
-                <a href="#" class="expand">&#x26AB;&#x26AB;&#x26AB;</a>
-            </aside>
-        </section>
+        <article>
+            <h2>Chic Narwhal Waistcoat</h2>
+            <img src="images/waistcoat.jpg" alt="Chic Narwhal Waistcoat">
+            <p>Yr master cleanse single-origin coffee heirloom pour-over hoodie, literally brunch echo park microdosing hella photo booth knausgaard four loko YOLO. Literally PBR&B try-hard plaid jianbing subway tile polaroid cornhole fingerstache selvage four loko fanny pack shaman. Mustache tacos gastropub hoodie selfies. Chartreuse swag godard fashion axe cloud bread PBR&B photo booth hexagon. Salvia fanny pack typewriter normcore, cloud bread artisan tacos locavore portland. Normcore you probably haven't heard of them whatever bicycle rights hashtag swag readymade prism truffaut bespoke.</p>
+            <p>Tumblr chia viral paleo. Coloring book trust fund glossier af. Craft beer whatever bushwick, meditation messenger bag yr pinterest chartreuse +1 pok pok kombucha iceland tattooed try-hard. Kombucha godard locavore hot chicken iPhone, tofu seitan farm-to-table bicycle rights organic ennui adaptogen. Skateboard copper mug jean shorts flannel seitan normcore tumeric whatever. Polaroid meggings etsy snackwave. Vice +1 disrupt, ramps umami gentrify distillery meditation sartorial iPhone lyft.</p>
+            <h3>Synth post-ironic hell?</h3>
+            <p>Bushwick vape banjo, bitters activated charcoal celiac. Sriracha occupy art party butcher, synth fashion axe health goth gochujang DIY lumbersexual umami succulents cardigan narwhal master cleanse. Iceland crucifix echo park forage helvetica locavore. Ethical kombucha keytar jianbing chicharrones lomo crucifix umami.</p>
+            <p>Heirloom leggings pork belly biodiesel, literally schlitz echo park tote bag brunch disrupt before they sold out lyft cloud bread man braid snackwave. Portland normcore taxidermy, small batch cred fanny pack cold-pressed quinoa green juice lyft mustache fashion axe. Drinking vinegar activated charcoal DIY lumbersexual polaroid cold-pressed truffaut. Vaporware lyft gentrify bespoke, portland williamsburg post-ironic plaid fingerstache keytar authentic kickstarter tousled. Man braid coloring book freegan chambray, poutine truffaut readymade post-ironic roof party brunch stumptown. Direct trade selfies meh hoodie. Cred semiotics waistcoat +1 lomo crucifix umami.</p>
+            <h3>Unicorn Bread</h3>
+            <p>Tofu neutra kog chicharrones, biodiesel poutine mixtape offal migas franzen actually. Shaman small batch slow-carb kinfolk mustache. Fashion axe hell of craft beer, la croix listicle gentrify cake chips man bun typewriter routine hella. Austin live-edge messenger bag 3 wolf moon hexagon swag snackwave chia bitters thundercats pop-up pour-over sustainable copper mug. Tilde lyft thundercats, succulents austin wolf moom af taiyaki single-origin coffee echo park listicle DIY crucifix brunch street.</p>
+            <p>Seitan pop-up ramps, waistcoat afogato knausgaard kombucha umami. 90's lyft unicorn. Pitchfork piche key, +1 whatever chia direct trade. Direct trade hella cloud bread, hashtag trust fund you probably haven't heard of them 3 wolf moom migas cliche. Glossier subway tile raclette, microdosing 8-bit woke kickstarter.</p>
+            <p>Thundercats crucifix +1 kale chips, portland pabst woke. Dreamcatcher sartorial wolf farm-to-table flannel. Next level cray banjo bespoke locavore brunch. Taxidermy meditation XOXO knausgaard austin seitan meggings succulents. Lumberssexual scenester snackwave, austin +1 roof party iceland palo santo woke raw denim.</p>
+            <time datetime="2020-09-24">24 September, 2020</time>
+        </article>
+        
+        <aside>
+            <h3>Freegan tote bag</h3>
+            <img src="images/totebag.jpg" alt="Freegan tote bag">
+            <p>I'm baby retro single-origin coffee vex denim artisan tofu vex hammock yr activated charcoal kinfolk four dollar toast meggings flex freegan, truffaut everyday carry scenester listicle wolf.</p>
+            
+            <h3>Readymade microdosing trust fund.</h3>
+            <img src="images/readymade.jpg" alt="Readymade microdosing trust fund.">
+            <p>You probably haven't heard of them you prob haven't heard of them seitan. Taiyaki venmo four loko banjo copper mug fam fam DIY la croix cloud bread unicorn franzen raclette hammock polaroid brunch neutra kale chips. Banh mi lo-fi biodiesel kombucha iceland tote bag everyday carry listicle hammock narwhal.</p>
+            
+            <h3>Cliche meditation</h3>
+            <img src="images/cliche.jpg" alt="Cliche meditation">
+            <p>Lyft yr readymade selvage intelligentsia single-origin coffee narwhal hot chicken raclette. Farm-to-table tofu you probably haven't heard of them activated charcoal schlitz banjo 90's offal truffaut ramps. Cold-pressed jean shorts afogato marfa gochujang locavore banh mi 90's heirloom vexilist lomo crucifix umami.</p>
+        </aside>
     </main>
     
+    <section class="image-bar">
+        <figure>
+            <figcaption>Twee, green banh mi la croix.</figcaption>
+            <img src="images/twee.jpg" alt="Twee, green banh mi la croix.">
+        </figure>
+        <figure>
+            <figcaption>Sartorial scenester roof party.</figcaption>
+            <img src="images/sartorial.jpg" alt="Sartorial scenester roof party.">
+        </figure>
+        <figure>
+            <figcaption>Seitan succulents, woke wolf migas.</figcaption>
+            <img src="images/seitan.jpg" alt="Seitan succulents, woke wolf migas.">
+        </figure>
+    </section>
+    
+    <a href="#" class="subscribe-button">Subscribe</a>
+    
     <footer>
-        <p>&copy; 2024 Aynan Suldan. Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>Images: "Stag", "Industrial", "Routine", "Eren 30's", "In Nomino", "Industrial City", and "Industrial City II" by Sasha Aim licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a>.</p>
+        <p>&copy; 2020 Sustainable Crucifix Swag</p>
+        <p>"Stag", "Industrial", "Routine", "Eren 30's", "In Nomino", "Industrial City", and "Industrial City II" by Sasha Aim licensed under CC BY-NC-SA 2.0.</p>
     </footer>
 </body>
 </html>
+
+
+
+
+
+
 
