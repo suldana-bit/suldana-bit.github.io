@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #f4f4f4;
         }
 
         header {
@@ -48,20 +49,26 @@
 
         main {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #ddd;
         }
 
         .main-content {
-            flex: 1 1 60%;
+            width: 65%;
+            padding-right: 20px;
             box-sizing: border-box;
+            border-right: 1px solid #ddd;
         }
 
         .main-content img {
             width: 100%;
             height: auto;
             margin: 15px 0;
+            border: 1px solid #ddd;
         }
 
         .main-content .date {
@@ -71,16 +78,9 @@
         }
 
         .sidebar {
-            flex: 1 1 35%;
+            width: 30%;
             padding-left: 20px;
-            border-left: 1px solid #ddd;
             box-sizing: border-box;
-        }
-
-        .bordered {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 20px;
         }
 
         .sidebar h3 {
@@ -92,37 +92,43 @@
             width: 100%;
             height: auto;
             margin-bottom: 15px;
+            border: 1px solid #ddd;
         }
 
         .image-bar {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             padding: 20px;
             border-top: 1px solid #ddd;
             border-bottom: 1px solid #ddd;
+            background: white;
+            max-width: 1200px;
+            margin: 20px auto;
         }
 
         .image-bar figure {
-            flex: 1 1 32%;
+            width: 32%;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
             box-sizing: border-box;
-            margin: 0;
+            background: #fff;
         }
 
         .image-bar img {
             width: 100%;
             height: auto;
+            border: 1px solid #ddd;
         }
 
         .image-bar figcaption {
-            text-align: center;
             margin-top: 10px;
             font-style: italic;
         }
 
         .subscribe-button {
             display: block;
-            text-align: left;
+            text-align: center;
             padding: 15px;
             background: #2c3e50;
             color: white;
@@ -130,7 +136,7 @@
             text-decoration: none;
             font-weight: bold;
             margin: 20px auto;
-            width: 200px;
+            max-width: 1200px;
         }
 
         footer {
@@ -139,19 +145,15 @@
             background: #f4f4f4;
             font-size: 14px;
             border-top: 1px solid #ddd;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        @media (max-width: 768px) {
-            .main-content, .sidebar {
-                flex: 1 1 100%;
-                padding-left: 0;
-                border-left: none;
-            }
-
-            .image-bar figure {
-                flex: 1 1 100%;
-                margin-bottom: 20px;
-            }
+        .bordered {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: #fff;
         }
     </style>
 </head>
@@ -168,7 +170,7 @@
     </header>
     <main>
         <section class="main-content">
-            <article>
+            <article class="bordered">
                 <h2>Chic Narwhal Waistcoat</h2>
                 <img src="images/stag.jpg" alt="Chic Narwhal Waistcoat">
                 <p>Yr master cleanse single-origin coffee heirloom pour-over hoodie, literally brunch echo park microdosing hella photo booth knausgaard four loko YOLO. Literally PR&B try-hard plaid jianbing subway tile polaroid cornhole fingerstache selvage four loko fanny pack shaman. Mustache tacos gastropub hoodie selfies. Chartreuse swag godard fashion axe cloud bread PR&B photo booth hexagon. Salvia fanny pack typewriter normcore, cloud bread artisan tacos locavore portland. Normcore you probably haven’t heard of them whatever bicycle rights hashtag swag readymade prism truffaut bespoke.</p>
@@ -222,3 +224,7 @@
     </footer>
 </body>
 </html>
+
+
+
+
